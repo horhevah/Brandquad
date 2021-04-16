@@ -28,8 +28,9 @@ class Command(BaseCommand):
                     status_code = values[8]
                     size = values[9]
                     log = ApacheLog(ip_address=ip_address,data_time=date,method=method,url=url,status_code=status_code,size=size)
-                    print(log.pk)
                     log.save()
+                    print(log.pk)
+
 
 
 
