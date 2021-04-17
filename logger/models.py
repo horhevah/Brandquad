@@ -12,5 +12,6 @@ class ApacheLog(models.Model):
     class Meta:
         verbose_name_plural = 'Записи лога'
         verbose_name = 'Запись лога'
+        ordering = ['-data_time']
 
 # Create your models here.
